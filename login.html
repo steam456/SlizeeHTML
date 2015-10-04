@@ -17,14 +17,7 @@
         <div class="col-lg-8 col-xs-8 logo">
           <h1><a href=""><img src="img/logo.png" alt=""></a></h1>
         </div>
-        <!-- <a href="#openModal" class="btn btn-primary button">Login</a> -->
-        <button type="button" id="btnlog" class="btn btn-primary button" data-toggle="modal" data-target="#modalLogin">
-        Login
-        </button>
-        <button type="button" id="btnreg" class="btn btn-primary button" data-toggle="modal" data-target="#modalRegister">
-        Register
-        </button>
-        <!-- <div class="col-lg-4 col-xs-4 user" id="iduser">
+        <div class="col-lg-4 col-xs-4 user" id="iduser">
           <a href=""><img src="img/user-img.png" alt=""></a>
           <span id="user-name">Rumania Hdz</span>
           <ul class="nav navbar-top-links navbar-right menu">
@@ -33,21 +26,20 @@
                       <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
                   </a>
                   <ul class="dropdown-menu dropdown-user">
-                      <li><a href="<?php echo base_url('index.php/welcome/logout')?>"><i class="fa fa-sign-out fa-fw"></i> Home</a></li>
-                      <li><a href="<?php echo base_url('index.php/welcome/logout')?>"><i class="fa fa-sign-out fa-fw"></i> Profile</a></li>
+                      <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Home</a></li>
+                      <li><a href="profile.html"><i class="fa fa-sign-out fa-fw"></i> Profile</a></li>
                       <li class="divider"></li>
-                      <li><a href="#" onclick="Logout()"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                      <li><a href="#" data-target='#modalLogout' data-toggle="modal"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
                   </ul>
               </li>
           </ul>
-        </div> -->
+        </div>
       </div>
     </div>
     <div class="modal fade" id="modalLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <form action="login.html">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="myModalLabel">Login</h4>
       </div>
@@ -65,9 +57,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="submit" class="btn btn-primary" id="loginbtn">Login</button>
+        <button type="button" class="btn btn-primary" id="loginbtn">Login</button>
       </div>
-    </form>
     </div>
   </div>
 </div>
@@ -115,6 +106,31 @@
 </div>
 </div>
 </div>
+
+<div class="modal fade" id="modalLogout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+  <div class="modal-header">
+    <form action="index.html">
+    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    <h4 class="modal-title" id="myModalLabel">Salir</h4>
+  </div>
+  <div class="modal-body">
+    <br>
+    <div class="input-group input-group-lg">
+      <!-- <span class="input-group-addon" id="sizing-addon2">@</span> -->
+      <label for="">¿Seguro que quieres salir?</label>
+    </div>
+    <br>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    <button type="submit" class="btn btn-primary" id="loginbtn">Salir</button>
+  </div>
+</form>
+</div>
+</div>
+</div>
   </header>
 
   <div class="">
@@ -126,9 +142,9 @@
       </ol>
 
       <div class="carousel-inner">
-        <div class="item active"><img src="img/slider-upper/focus-bg.png" alt="" class="adaptar"></div>
-        <div class="item"><img src="img/slider-upper/Mr-Nobody.png" alt="" class="adaptar"></div>
-        <div class="item"><img src="img/slider-upper/thg.png" alt="" class="adaptar"></div>
+        <div class="item active"><img class="img" src="img/slider-upper/focus-bg.png" alt="" class="adaptar"></div>
+        <div class="item"><img class="img" src="img/slider-upper/Mr-Nobody.jpg" alt="" class="adaptar"></div>
+        <div class="item"><img class="img" src="img/slider-upper/thg.jpg" alt="" class="adaptar"></div>
       </div>
 
       <a href="#miSlide" class="left carousel-control" data-slide='prev'><span class='glyphicon glyphicon-chevron-left'></span></a>
@@ -162,31 +178,7 @@
 <div class="container first">
   <div class="row">
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
-      <div class="title"><img src="img/movies/malefic.png" alt=""></div>
-      <div class="footersillo">
-        <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
-        <span class="favs icon icon-heart"></span><span class="blanco font-Adobe text"> 6875</span><p></p>
-        <span class="comment icon icon-bubbles3"></span><span class="blanco font-Adobe text"> 214</span><p></p>
-        <span class="blanco font-Adobe text">Puntuacion: </span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-empty"></span>
-        <p class="blanco font-Adobe fecha">Fecha de publicacion: Ene 29, 2013</p>
-      </div>
-      </a>
-    </div>
-    <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
-      <div class="title"><img src="img/movies/Pixels.jpg" alt=""></div>
-      <div class="footersillo">
-        <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
-        <span class="favs icon icon-heart"></span><span class="blanco font-Adobe text"> 6875</span><p></p>
-        <span class="comment icon icon-bubbles3"></span><span class="blanco font-Adobe text"> 214</span><p></p>
-        <span class="blanco font-Adobe text">Puntuacion: </span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-empty"></span>
-        <p class="blanco font-Adobe fecha">Fecha de publicacion: Ene 29, 2013</p>
-      </div>
-      </a>
-    </div>
-    <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -198,7 +190,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -210,7 +202,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -222,7 +214,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -234,7 +226,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -246,7 +238,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -258,7 +250,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -270,7 +262,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -282,7 +274,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -294,7 +286,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -306,7 +298,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -318,7 +310,7 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -330,7 +322,31 @@
       </a>
     </div>
     <div class="col-md-1 contenedor">
-      <a href="reviewsnoregistrado.html">
+      <a href="reviews.html">
+      <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
+      <div class="footersillo">
+        <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
+        <span class="favs icon icon-heart"></span><span class="blanco font-Adobe text"> 6875</span><p></p>
+        <span class="comment icon icon-bubbles3"></span><span class="blanco font-Adobe text"> 214</span><p></p>
+        <span class="blanco font-Adobe text">Puntuacion: </span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-empty"></span>
+        <p class="blanco font-Adobe fecha">Fecha de publicacion: Ene 29, 2013</p>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-1 contenedor">
+      <a href="reviews.html">
+      <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
+      <div class="footersillo">
+        <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
+        <span class="favs icon icon-heart"></span><span class="blanco font-Adobe text"> 6875</span><p></p>
+        <span class="comment icon icon-bubbles3"></span><span class="blanco font-Adobe text"> 214</span><p></p>
+        <span class="blanco font-Adobe text">Puntuacion: </span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-full"></span><span class="comment icon icon-star-empty"></span>
+        <p class="blanco font-Adobe fecha">Fecha de publicacion: Ene 29, 2013</p>
+      </div>
+      </a>
+    </div>
+    <div class="col-md-1 contenedor">
+      <a href="reviews.html">
       <div class="title"><img src="img/movies/capitanamerica.png" alt=""></div>
       <div class="footersillo">
         <p class="title-movie blanco font-Adobe">The Incredible Hulk <span class=" playbtn icon icon-play3"></span> </p>
@@ -353,8 +369,8 @@
     </ol>
 
     <div class="carousel-inner">
-      <div class="item active"><img src="img/slider-bottom/f&f7.png" alt="" class="adaptar"></div>
-      <div class="item"><img src="img/slider-bottom/insidious3.png" alt="" class="adaptar"></div>
+      <div class="item active"><img src="img/slider-bottom/takken3.png" alt="" class="adaptar"></div>
+      <div class="item"><img src="img/slider-bottom/takken3.png" alt="" class="adaptar"></div>
       <div class="item"><img src="img/slider-bottom/takken3.png" alt="" class="adaptar"></div>
     </div>
 
@@ -394,7 +410,11 @@
       $('#btnreg').show();
     }
   </script> -->
-  <script>
+  <!-- <script>
+    $(document).ready(function(){
+      $("#iduser").hide();
+    });
+  </script> -->
   <script type="text/javascript">
   function validar()
   {

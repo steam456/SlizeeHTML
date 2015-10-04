@@ -1,7 +1,7 @@
 
 header{
   background-color: red;
-  height: 195px;
+  height: 100px;
 }
 
 .font-Adobe{
@@ -9,15 +9,20 @@ header{
 }
 
 .logo{
-    padding-top: 40px;
+    padding-top: 5px;
 }
 
 .user{
-  padding-top: 50px;
+  padding-top: 30px;
+}
+
+.img{
+  width: 1529px;
+  height: 771px;
 }
 
 .button{
-  margin-top: 70px;
+  margin-top: 30px;
   margin-left: 20px;
 }
 
@@ -89,7 +94,8 @@ transition: opacity 400ms ease-in;
 }
 
 .adaptar{
-  width: 100%;
+  width: 1529px;
+  height: 771px;
 }
 
 .icon-arrow-left2{
@@ -179,6 +185,11 @@ transition: opacity 400ms ease-in;
 	display: inline-block;
 	overflow: hidden;
 	position: relative;
+}
+
+.contenedor>a img{
+  width: 295px;
+  height: 271px;
 }
 
 .contenedor>a .title{
@@ -313,4 +324,45 @@ footer ul li a span{
 footer p{
 	margin-left: 105px;
 	margin-top: 25px;
+}
+
+
+/*PROFILE*/
+.verde{
+  color: #2ebd59;
+}
+
+.profile{
+  background-color: #f8f8f8;
+  height: 360px;
+}
+
+.data{
+  background-color: #ffffff;
+  height: 280px;
+  text-align: center;
+  border: 1px solid #919496;
+}
+
+.gray{
+  color: #919496;
+}
+
+.premium p{
+  text-align: center;
+  padding-top: 40px;
+  font-family: 'Helvetica Neue' sans-serif;
+}
+
+.premium>button{
+  margin-top: 40px;
+}
+
+/* REVIEWS */
+
+.reviews img{
+    width: 250px;
+    height: 380px;
+    float: left;
+    margin-right: 30px;
 }
