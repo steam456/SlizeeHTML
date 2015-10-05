@@ -187,6 +187,11 @@ transition: opacity 400ms ease-in;
 	position: relative;
 }
 
+.contenedor>a img{
+  width: 295px;
+  height: 271px;
+}
+
 .contenedor>a .title{
 	width: 295px;
 	height: 271px;
