@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+</head>
+<body>
+  <header>
+    <div class="container headersillo">
+      <div class="row">
+        <div class="col-lg-8 col-xs-8 logo">
+          <h1><a href=""><img src="img/logo.png" alt=""></a></h1>
+        </div>
+        <div class="col-lg-4 col-xs-4 user" id="iduser">
+          <a href=""><img src="img/user-img.png" alt=""></a>
+          <span id="user-name">Rumania Hdz</span>
+          <ul class="nav navbar-top-links navbar-right menu">
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user">
+                      <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Home</a></li>
+                      <li><a href="profile.html"><i class="fa fa-sign-out fa-fw"></i> Profile</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#" data-target='#modalLogout' data-toggle="modal"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="modal fade" id="modalLogout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <form action="index.html">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Salir</h4>
+    </div>
+    <div class="modal-body">
+      <br>
+      <div class="input-group input-group-lg">
+        <!-- <span class="input-group-addon" id="sizing-addon2">@</span> -->
+        <label for="">¿Seguro que quieres salir?</label>
+      </div>
+      <br>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="submit" class="btn btn-primary" id="salirbtn">Salir</button>
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <!-- CONTENIDO PROFILE -->
+
+  <div class="profile container">
+    <h2 class="verde">Vista general de la cuenta.</h2>
+    <div class="data container col-md-4">
+      <h3 class="verde">Perfil</h3>
+      <p class="gray">Nombre</p>
+      <p>Daniel Iván Madrid Garate</p>
+      <p class="gray">Email</p>
+      <p>Maniak_mzt@hotmail.com</p>
+      <p class="gray">Fecha de nacimiento</p>
+      <p>1995-05-25</p>
+      <button class="btn btn-primary">Editar perfil</button>
+      
+    </div>
+
+    <div class="premium data container col-md-8">
+      <p>Slizee Free</p>
+      <p>Actualmente estás usando el servicio de Slizee Gratis. Con Slizee Gratis, verás anuncios, no podrás entrar a las salas privadas en el chat. Regresa a Premium cuando quieras.</p>
+      <button type="button" class="btn btn-primary" name="button">OBTÉN PREMIUM</button>
+    </div>
+  </div>
+
+  <div class="line"></div>
+  <footer>
+    <ul>
+      <li><a href="#"><span class="icon icon-facebook3"></span></a></li>
+      <li><a href="#"><span class="icon icon-twitter3"></span></a></li>
+      <li><a href="#"><span class="icon icon-dribbble3"></span></a></li>
+      <li><a href="#"><span class="icon icon-share2"></span></a></li>
+      <p>Copyright 2015. LACT. All Rights Reserved.</p>
+
+    </ul>
+  </footer>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+</body>
+</html>

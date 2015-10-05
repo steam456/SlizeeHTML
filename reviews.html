@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Profile</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/comments.css">
+</head>
+<body>
+  <header>
+    <div class="container headersillo">
+      <div class="row">
+        <div class="col-lg-8 col-xs-8 logo">
+          <h1><a href=""><img src="img/logo.png" alt=""></a></h1>
+        </div>
+        <div class="col-lg-4 col-xs-4 user" id="iduser">
+          <a href=""><img src="img/user-img.png" alt=""></a>
+          <span id="user-name">Rumania Hdz</span>
+          <ul class="nav navbar-top-links navbar-right menu">
+               <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                      <i class="fa fa-user fa-fw"></i>  <i class="fa fa-caret-down"></i>
+                  </a>
+                  <ul class="dropdown-menu dropdown-user">
+                      <li><a href="index.html"><i class="fa fa-sign-out fa-fw"></i> Home</a></li>
+                      <li><a href="profile.html"><i class="fa fa-sign-out fa-fw"></i> Profile</a></li>
+                      <li class="divider"></li>
+                      <li><a href="#" data-target='#modalLogout' data-toggle="modal"><i class="fa fa-sign-out fa-fw"></i> Logout</a></li>
+                  </ul>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="modal fade" id="modalLogout" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+  <div class="modal-content">
+    <div class="modal-header">
+      <form action="index.html">
+      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <h4 class="modal-title" id="myModalLabel">Salir</h4>
+    </div>
+    <div class="modal-body">
+      <br>
+      <div class="input-group input-group-lg">
+        <!-- <span class="input-group-addon" id="sizing-addon2">@</span> -->
+        <label for="">¿Seguro que quieres salir?</label>
+      </div>
+      <br>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      <button type="submit" class="btn btn-primary" id="salirbtn">Salir</button>
+    </div>
+  </form>
+  </div>
+  </div>
+  </div>
+  <!-- CONTENIDO REVIEWS -->
+
+  <div class="container reviews">
+    <h2>Movie Review</h2>
+    <a href="#"><img src="img/reviews/lorem-review.png" alt="POSTER"></a>
+    <h3>Lorem Movie Review</h3>
+    <span class='cast'>CAST:</span>
+    <span>Will Smith, Margot Robbie, Adrian Martinez, Rodrigo Santoro, BD Wong, Robert</span><br>
+    <span class='cast'>DIRECTION:</span>
+    <span>Glenn Ficarra, John Requa</span><br>
+    <span class='cast'>GENRE:</span>
+    <span>Crime</span><br>
+    <span class='cast'>DURATION:</span>
+    <span>1 hour 45 minutes</span>
+    <hr>
+    <h2>Trailer</h2>
+    <hr>
+    <iframe width="550" height="315"
+      src="http://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1">
+    </iframe>
+    <!--LINK DEL VIDEO-->
+
+    <!-- Contenedor Principal -->
+    <div class="comments-container">
+        <ul id="comments-list" class="comments-list">
+            <li>
+                <div class="comment-main-level">
+                    <!-- Avatar -->
+                    <div class="comment-avatar"><img src="images/avatar_1.jpg" alt=""></div>
+                    <!-- Contenedor del Comentario -->
+                    <div class="comment-box">
+                        <div class="comment-head">
+                            <h6 class="comment-name by-author"><a href="http://creaticode.com/blog">Agustin Ortiz</a></h6>
+                            <span>hace 20 minutos</span>
+                            <i class="fa fa-reply"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="comment-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Respuestas de los comentarios -->
+                <ul class="comments-list reply-list">
+                    <li>
+                        <!-- Avatar -->
+                        <div class="comment-avatar"><img src="images/avatar_2.jpg" alt=""></div>
+                        <!-- Contenedor del Comentario -->
+                        <div class="comment-box">
+                            <div class="comment-head">
+                                <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+                                <span>hace 10 minutos</span>
+                                <i class="fa fa-reply"></i>
+                                <i class="fa fa-heart"></i>
+                            </div>
+                            <div class="comment-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </li>
+
+            <li>
+                <div class="comment-main-level">
+                    <!-- Avatar -->
+                    <div class="comment-avatar"><img src="images/avatar_2.jpg" alt=""></div>
+                    <!-- Contenedor del Comentario -->
+                    <div class="comment-box">
+                        <div class="comment-head">
+                            <h6 class="comment-name"><a href="http://creaticode.com/blog">Lorena Rojero</a></h6>
+                            <span>hace 10 minutos</span>
+                            <i class="fa fa-reply"></i>
+                            <i class="fa fa-heart"></i>
+                        </div>
+                        <div class="comment-content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit omnis animi et iure laudantium vitae, praesentium optio, sapiente distinctio illo?
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="texto">
+      <textarea name="name" rows="10" cols="100" placeholder='Leave a comment'></textarea><br>
+      <button type="button" class='btn btn-primary' name="button">Enviar</button>
+    </div>
+
+  </div>
+
+  <div class="line"></div>
+  <footer>
+    <ul>
+      <li><a href="#"><span class="icon icon-facebook3"></span></a></li>
+      <li><a href="#"><span class="icon icon-twitter3"></span></a></li>
+      <li><a href="#"><span class="icon icon-dribbble3"></span></a></li>
+      <li><a href="#"><span class="icon icon-share2"></span></a></li>
+      <p>Copyright 2015. LACT. All Rights Reserved.</p>
+
+    </ul>
+  </footer>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> -->
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  <script src="js/bootstrap.min.js" charset="utf-8"></script>
+</body>
+</html>
